@@ -1,0 +1,65 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+body{
+    background-image: linear-gradient(rgba(0,0,0,0.75), rgba(0,0,0,0.75)), url('hatter_fooldal/hatter.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    align-items: center;
+    display: flex;
+    height: inherit;
+    justify-content: center;
+}
+
+.card{
+    width: 30%;
+    height: auto;
+    padding: auto;
+    margin: auto;
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    color: #fff;
+}
+
+.input-group-text{
+    backdrop-filter: blur(5.5px);
+    -webkit-backdrop-filter: blur(5.5px);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(35, 35, 35, 0.1);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.35);
+    border: 1px solid rgba(255, 255, 255, 0.40);
+}
+
+.btn{
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    padding: 8px;
+}
+
+.btn-primary:hover{
+    border: 1px solid rgba(255, 255, 255, 0.40);
+    transform: translateY(-8px);
+    transition: .2s;
+}
+
+.btn-primary:not(:hover){
+    transition: .2s;
+    transform: scale(1);
+}
