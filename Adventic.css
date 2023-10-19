@@ -1,95 +1,3 @@
-html{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body{
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #fff;
-    color: #000000;
-}
-.karora_ar{
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
-}
-img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 200px;
-    height: 200px;
-    border-radius: 20px;
-}
-
-button{
-    border-radius: 10px;
-}
-
-/* KARTYA */
-.card{
-    border: 1px solid;
-    border-radius: 30px;
-    box-shadow: 2px 2px 5px black;
-}
-
-.card-reszleg{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 250px;
-    height: 380px;
-    display: inline-flex;
-    margin: 25px;
-}
-
-.card-reszleg:hover{
-    transform: translateY(-20px);
-    transition: .2s;
-    box-shadow: 5px 5px 10px black;
-}
-
-.card:not(:hover){
-    transition: 0.2s;
-    transform: scale(1);
-}
-
-.card-header{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 30px;
-    background:none;
-    width: 100%;
-}
-
-/*OLDAL CIME*/
-#kollekcio{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: bold;
-    font-style: italic;
-    text-decoration: underline;
-}
-
-.reszleg, .oldalmenu{
-    margin-top: 50px;
-}
-
-.card-szures{
-    margin-top: 150px;
-}
-
-.btn-success{
-    border-radius: 15px;
-    padding: 3px;
-    margin: 0;
-}
-
-.karora_ar{
-    justify-content: space-between;
-}
-
 /*FEJLÉC*/
 .header {
     overflow: hidden;
@@ -196,9 +104,141 @@ button{
     padding: 0;
     
 }
+.vezerlo{
+    color: black;
+    text-decoration: none;
+    float: none;
+}
+.vezerlo:hover{
+    color: black;
+}
+.egyeduli-teremek container{
+    justify-content: center;
+    align-items: center;
+    max-width: 1000px;
+    margin: auto;
+    padding-left: 25px;
+    margin-right: 20px;
+    padding: 0;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.col-6 p{
+    text-align:justify;
+}
+.egyeduli-termek{
+    margin-top: 80px;
+    float: center;
+}
+.egyeduli-termek .col-6 img{
+    padding:0;
+}
+.egyeduli-termek .col-6{
+    padding:20px;
+}
+.egyeduli-termek h4{
+    margin: 20px 0;
+    font-size: 22px;
+    font-weight: bold;
+}
+.egyeduli-termek select{
+    display: block;
+    padding: 10px;
+    margin-top: 20px;
+}
+.egyeduli-teremek input{
+    width: 50px;    
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border: 1px solid #ff523b;
+}
+input:focus{
+    outline: none;
+}
+.egyeduli-termek .fa{
+    color: #ff523b;
+    margin-left: 10px;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+* {box-sizing:border-box}
 
-/* FOOTER */
-footer{
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  text-decoration: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    color:black;
+    text-decoration: none;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: black;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+
+.footer{
     position: relative;
     bottom: 0;
     left: 0;
@@ -210,7 +250,6 @@ footer{
     padding-top: 10px;
     color: #fff;
 }
-
 .footer-content{
     display: flex;
     align-items: center;
@@ -218,21 +257,18 @@ footer{
     flex-direction: column;
     text-align: center;
 }
-
 .footer-content h3{
     font-size: 1.8rem;
     font-weight: 400;
     text-transform: capitalize;
     line-height: 3rem;
 }
-
 .footer-content p{
     max-width: 500px;
     margin: 10px auto;
     line-height: 28px;
     font-size: 14px;
 }
-
 .elerhetoseg{
     list-style: none;
     display: flex;
@@ -240,24 +276,20 @@ footer{
     justify-content: center;
     margin: 1rem 0 3rem 0;
 }
-
 .elerhetoseg li{
     margin: 0 10px;
 }
-
 .elerhetoseg a{
     text-decoration: none;
     color: #fff;
 }
-
 .elerhetoseg a i{
     font-size: 1.1rem;
     transition: color .4s ease;
 
 }
-
 .elerhetoseg a:hover i{
-    color: aqua;
+    color: #fff;
 }
 
 .footer-bottom{
@@ -266,13 +298,11 @@ footer{
     padding: 10px 0;
     text-align: center;
 }
-
 .footer-bottom p{
     font-size: 14px;
     word-spacing: 2px;
     text-transform: capitalize;
 }
-
 .footer-bottom span{
     text-transform: uppercase;
     opacity: .4;

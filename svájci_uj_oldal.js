@@ -21,12 +21,12 @@ document.getElementById('LaPassion-10220-gomb').addEventListener('click', functi
 
 //Classic-01002
 document.getElementById('Classic-01002-gomb').addEventListener('click', function() {
-  window.open('karóra_login.html', 'blank');
+  window.open('Classic-01002.html', 'blank');
 });
 
 //Adventic
 document.getElementById('Adventic-gomb').addEventListener('click', function() {
-  window.open('karóra_login.html', 'blank');
+  window.open('Adventic.html', 'blank');
 });
 
 
